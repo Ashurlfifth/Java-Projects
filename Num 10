@@ -1,0 +1,30 @@
+function getLongestWordOfMixedElements(arr) {
+  // your code here
+  var count = 0;
+  x = 0;
+  y = ""
+  var array = [];
+  
+  if (arr === ""){
+  	return ''
+  }
+  
+  for (i = 0; i < arr.length; i++) {
+  	if (arr[i] % 1 === 0){
+  		count += 1;
+  	}
+    else{
+    	array.push(arr[i]);
+    }
+  }
+
+  for (p=0;p<array.length;p++){
+  	if (array[p].length > x){
+  		x = array[p].length
+  		y = array[p]
+  	}
+  }
+ return y
+}
+var output = getLongestWordOfMixedElements([3, 'word', 5, 'up', 3, 1]);
+console.log(output); // --> 'word'
