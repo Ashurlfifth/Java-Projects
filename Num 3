@@ -1,0 +1,15 @@
+function checkAge(name, age) {
+  // your code here
+var ages = age;
+if (ages < 21) {
+  console.log("Go home, "+name);
+  
+  }
+if (ages >= 21) {
+  console.log("Welcome, "+name);
+    
+  }
+
+}
+
+var output = checkAge('Adrian',22);
