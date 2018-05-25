@@ -1,0 +1,10 @@
+function TimesTable(x){
+	for (i=0;i<(x+1);i++){
+		console.log(i+" TIMES TABLE")
+		for (o=0;o<11;o++){
+			console.log(i+" x "+o+" = "+i*o)
+		}
+	}
+}
+
+TimesTable(10)
