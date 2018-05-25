@@ -1,0 +1,32 @@
+function owassoRams(n){
+  var crab = [];
+  var x = 1;
+  for(i=0;i<n;i++){
+  	if (i === 0){
+  		crab.push(x)
+  	}
+    else if (x%15 === 0){
+  		crab.push("OwassoRams")
+    }
+  	else if (x%3 === 0 && x != 1){
+  		if (x%5 !== 0){
+  			crab.push("Owasso")
+  		}
+  	}
+  	else if (x%5 === 0 && x != 1){
+  		if (x%3 !== 0){
+  			crab.push("Rams")
+  		}
+
+  	}
+    else{
+    	crab.push(x)
+    }
+  	x += 1
+  }
+  return crab
+}
+
+var output = owassoRams(15);
+
+console.log(output);
