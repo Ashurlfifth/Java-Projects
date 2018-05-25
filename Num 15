@@ -1,0 +1,23 @@
+function CoinFlip(){
+	var person = prompt("Enter your name","Type here");
+	var Heads = 0;
+	var Tails = 0;
+	if (person !== null){
+		var coins = prompt("Type in the amount of times you want to flip a coin", "");
+		for (i = 0; i<coins; i++){
+			var number = Math.floor(Math.random() * 100)
+			if (number > 50){
+				Tails += 1;
+			}
+			else{
+				Heads += 1
+			}
+		}
+	}
+	console.log("Total coin flips: "+coins);
+	console.log("="*20);
+	console.log("Heads "+Heads);
+	console.log("Tails "+Tails)
+}
+
+CoinFlip()
