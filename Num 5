@@ -1,0 +1,23 @@
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  var z = 0;
+  var one = word1.length;
+  var two = word2.length;
+  var three = word3.length;
+  for (i = 0; i < 100; i++){
+  	if (z == one || z == two || z == three){
+    	return z
+    	break;
+  	}
+  	
+  	if (z < one || z < two || z < three){
+    	z += 1;
+  	}
+  	
+  }
+}
+
+// Usually I wouldn't be 
+
+var output = findMinLengthOfThreeWords('cat', 'beats', 'seen');
+console.log(output); // --> 1
