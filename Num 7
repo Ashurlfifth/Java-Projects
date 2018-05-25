@@ -1,0 +1,17 @@
+function computeSumBetween(num1, num2) {
+  // your code here
+  var one = (num2 - num1);
+  var two = 0;
+  var x = num1;
+  
+  for(i = 0; i < one; i++){
+  	two += (x);
+  	x += 1;
+    
+    
+  }
+  return two;
+}
+
+var output = computeSumBetween(2, 5);
+console.log(output); // --> 9
